@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <h1>Message System</h1>
+    <button id="connect">Connect to Wallet</button>
+    <div>
+        <h2>Add Member</h2>
+        <input type="text" id="addMemberAddress" placeholder="Member Address">
+        <select id="designation">
+            <option value="1">HOD</option>
+            <option value="2">Faculty</option>
+        </select>
+        <button onclick="addMember()">Add Member</button>
+    </div>
+
+    <div>
+        <h2>Send Message</h2>
+        <input type="text" id="messageAddress" placeholder="Recipient Address">
+        <input type="text" id="message" placeholder="Your Message">
+        <button onclick="sendUpMessage()">Send Up Message</button>
+        <button onclick="sendDownMessage()">Send Down Message</button>
+        <button onclick="sendHorizontalMessage()">Send Horizontal Message</button>
+    </div>
+
+    <div>
+        <h2>Delete Memeber</h2>
+        <input type="text" id ="deleteMemberAddress" placeholder="Member Address">
+        <button onclick="removeMember()">Remove Member</button>
+    </div>
+
+    <div>
+        <h2>Check member</h2>
+        <button id="checkMemeber" onclick="checkMember()">Check member</button>
+        <input type="text" id="memberAddress" placeholder="Enter Member address">
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
