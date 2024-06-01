@@ -1,5 +1,5 @@
 # Message System
-This fullstack code is made for the proper message communtication between different bodies of an organisation, here in this code university is taken as example, here hod can send message to faculities , faculity to Hods, faculity to faculities and Hod to Hods.
+This fullstack code is made for the proper message communtication between different bodies of an organisation, here in this code university is taken as example, here HOD can send message to faculities , faculity to Hods, faculity to faculities and Hod to Hods.
 ## Description
 ### Smart contract part
 This contract is written in Solidity language, a programming language used for developing smart contracts on the Ethereum blockchain. In smart contract first we have ```enum Designation``` which will tell the designation of the members. ```members``` is a state variable to store the designation of members. ```addMember()``` adds a member with its designation. ```upMessage()``` can only called by faculities to send message to hod and ```downMessage()``` can be called by hod only to send message to faculities. ```horizontalMessage()``` can be called by both but to send message to the same level no hierarchical level. ```deleteMember()``` will delete the existing member.
