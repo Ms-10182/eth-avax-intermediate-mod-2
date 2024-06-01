@@ -10,8 +10,21 @@ This contract is written in Solidity language, a programming language used for d
 
 ### Executing program
 
-To run this program, First create a directory , switch to that directory and open it in vs code. In terminal run the following commands:
-1)
+To run this program, First create a directory , switch to that directory and open it in vs code.
+1) Run ```npm i```, this will install the dependencies.
+2) run ```npx hardhat node``` this will create a local blockchain. from the provided private keys copy anyone and import in metamask.
+3) open new terminal and run ```npx hardhat run --network localhost scripts/deploy.js``` . This will compile and deploy the contract on hardhat node. contract address will be printed in the terminal, copy and paste that address in ```contractAddress``` value in ```src\script.js``` file.
+4) naviage to ```../artifacts/contracts/MessageSystem.sol/MessageSystem.json``` file and copy the abi address which looks like :
+   ```javascript
+   "abi": [
+     {.....}
+    ]
+   ```
+   and paste this for the value of contractABI.
+   5) Now open index.html.
+   6) in metamask set network to localhost
+   7) click connect wallet
+   now you can interact with UI add/remove member as hod/faculity, send messages. And at last can check the designation of member in integer form(in console) by providing its address.
 
 ## Authors
 
